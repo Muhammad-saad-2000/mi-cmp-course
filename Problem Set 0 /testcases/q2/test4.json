@@ -1,0 +1,5 @@
+{
+    "description": "Single Element",
+    "input_args": ["[12]"],
+    "comparison_args": ["0"]
+}

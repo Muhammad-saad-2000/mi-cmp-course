@@ -1,0 +1,5 @@
+{
+    "description": "Empty Grid",
+    "input_args": ["Grid.GridFromArray([])", "0"],
+    "comparison_args": ["set()"]
+}

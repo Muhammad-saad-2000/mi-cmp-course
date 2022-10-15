@@ -1,0 +1,33 @@
+{
+    "name": "Problem Set 0: Introduction to Python",
+    "problems": [
+        {
+            "name": "Palindromes",
+            "testcases_path": "q1",
+            "function": "palindrome_check.palindrome_check",
+            "timeout": 1
+        },
+        {
+            "name": "Peaks",
+            "testcases_path": "q2",
+            "function": "peaks.peaks",
+            "timeout": 1
+        },
+        {
+            "name": "Histogram",
+            "testcases_path": "q3",
+            "function": "histogram.histogram"
+        },
+        {
+            "name": "GPA Calculator",
+            "testcases_path": "q4",
+            "function": "gpa_calculator.calculate_gpa",
+            "comparator": "autograder.approximate_comparator"
+        },
+        {
+            "name": "Locator",
+            "testcases_path": "q5",
+            "function": "locator.locate"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "description": "Zig-Zag",
+    "input_args": ["[1,2,1,2,1,2,1,2]"],
+    "comparison_args": ["3"]
+}

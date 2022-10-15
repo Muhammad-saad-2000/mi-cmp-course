@@ -1,0 +1,5 @@
+{
+    "description": "Multitype Grid",
+    "input_args": ["Grid.GridFromArray([['a',1,'a'],[1,'a',1],['a',1,'a']])", "'a'"],
+    "comparison_args": ["{(0,0),(2,0),(1,1),(0,2),(2,2)}"]
+}

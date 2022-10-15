@@ -1,0 +1,5 @@
+{
+    "description": "3x3 Grid",
+    "input_args": ["Grid.GridFromArray([[0,1,0],[1,0,1],[0,1,0]])", "1"],
+    "comparison_args": ["{(1,0),(0,1),(2,1),(1,2)}"]
+}

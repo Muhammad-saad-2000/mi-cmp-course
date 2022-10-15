@@ -1,0 +1,5 @@
+{
+    "description": "Zero course coverage",
+    "input_args": ["Student('1105', 'Ahmed')", "[Course('CMPN402', 'MI', 3, {'1115':'A', '1203':'B'}), Course('CMPN205', 'CG', 2, {'2105':'B', '1203':'A'}), Course('CMPN666', 'AHS', 2, {'1203':'D'})]"],
+    "comparison_args": ["0.0"]
+}

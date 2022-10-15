@@ -1,0 +1,5 @@
+{
+    "description": "String Histogram",
+    "input_args": ["'hello world'"],
+    "comparison_args": ["{' ':1, 'h':1, 'e':1, 'l':3, 'o':2, 'w':1, 'r':1, 'd':1}"]
+}

@@ -1,0 +1,5 @@
+{
+    "description": "Alphabet",
+    "input_args": ["'ABCDEFGHIJKLMNOPQRSTUVWXYZZYXWVUTSRQPONMLKIHGFEDCBA'"],
+    "comparison_args": ["False"]
+}

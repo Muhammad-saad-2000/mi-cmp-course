@@ -1,0 +1,5 @@
+{
+    "description": "Char Grid",
+    "input_args": ["Grid.GridFromArray([['a','b','c','d'],['b','c','a','d'],['d','c','b','a']])", "'a'"],
+    "comparison_args": ["{(0,0),(2,1),(3,2)}"]
+}

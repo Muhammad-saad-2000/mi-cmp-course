@@ -1,0 +1,5 @@
+{
+    "description": "Single Peak",
+    "input_args": ["[1,2,3,6,5]"],
+    "comparison_args": ["1"]
+}

@@ -1,0 +1,5 @@
+{
+    "description": "Multiple Peaks",
+    "input_args": ["[2,1,2,3,2,3,4,5,1,3]"],
+    "comparison_args": ["2"]
+}

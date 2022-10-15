@@ -1,0 +1,5 @@
+{
+    "description": "Palinedrome with Odd Number of Characters",
+    "input_args": ["'racecar'"],
+    "comparison_args": ["True"]
+}

@@ -1,0 +1,5 @@
+{
+    "description": "Palinedrome with Even Number of Characters",
+    "input_args": ["'plassalp'"],
+    "comparison_args": ["True"]
+}

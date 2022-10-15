@@ -1,0 +1,5 @@
+{
+    "description": "Pyramid Histogram",
+    "input_args": ["[i for n in range(10) for i in range(n)]"],
+    "comparison_args": ["{0:9, 1:8, 2:7, 3:6, 4:5, 5:4, 6:3, 7:2, 8:1}"]
+}

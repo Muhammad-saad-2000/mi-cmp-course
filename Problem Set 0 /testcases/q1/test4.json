@@ -1,0 +1,5 @@
+{
+    "description": "Empty strings are palindromes?",
+    "input_args": ["''"],
+    "comparison_args": ["True"]
+}

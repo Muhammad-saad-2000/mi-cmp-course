@@ -1,0 +1,5 @@
+{
+    "description": "Full course coverage",
+    "input_args": ["Student('1111', 'Kamal')", "[Course('CMPN402', 'MI', 3, {'1105':'A', '1111':'B+'}), Course('CMPN205', 'CG', 2, {'1225':'B', '1111':'A-'}), Course('CMPN101', 'Logic', 2, {'1111':'C+'})]"],
+    "comparison_args": ["23.3/7"]
+}

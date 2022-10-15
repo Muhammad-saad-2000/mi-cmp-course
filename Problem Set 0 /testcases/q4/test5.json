@@ -1,0 +1,5 @@
+{
+    "description": "No courses",
+    "input_args": ["Student('1105', 'Ahmed')", "[]"],
+    "comparison_args": ["0.0"]
+}
