@@ -1,0 +1,13 @@
+{
+    "description": "Dungeon 2",
+    "function": "test_tools.run_uninformed_search_for_dungeon",
+    "comparator": "test_tools.compare_search_results_for_dungeon",
+    "input_args": [
+        "'search.UniformCostSearch'",
+        "DungeonProblem.from_file('dungeons/dungeon2.txt')"
+    ],
+    "comparison_args": [
+        "[('RRRRRRRUUUUUU', 46), ('UUUUUURRRRRRR', 46)]",
+        "'dungeons/dungeon2.txt'"
+    ]
+}

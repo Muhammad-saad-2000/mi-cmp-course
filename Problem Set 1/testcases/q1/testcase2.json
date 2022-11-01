@@ -1,0 +1,13 @@
+{
+    "description": "Park 1 - Goal State",
+    "input_args": [
+        "load_function('parking.ParkingProblem').from_file('parks/park1.txt')",
+        "[(0,'R'),(0,'R')]"
+    ],
+    "comparison_args": [
+        "2",
+        "True",
+        "None",
+        "'parks/park1.txt'"
+    ]
+}

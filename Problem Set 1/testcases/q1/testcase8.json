@@ -1,0 +1,13 @@
+{
+    "description": "Park 4 - Happy Goal State",
+    "input_args": [
+        "load_function('parking.ParkingProblem').from_file('parks/park4.txt')",
+        "[(0,'L'),(0,'L'),(1,'L'),(1,'L'),(1,'D'),(1,'D'),(1,'R'),(1,'R'),(1,'R'),(1,'R'),(1,'R'),(1,'U'),(1,'U'),(1,'U'),(1,'L'),(1,'L'),(0,'R'),(0,'R'),(0,'R'),(0,'R')]"
+    ],
+    "comparison_args": [
+        "20",
+        "True",
+        "None",
+        "'parks/park4.txt'"
+    ]
+}

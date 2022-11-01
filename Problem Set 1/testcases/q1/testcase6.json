@@ -1,0 +1,13 @@
+{
+    "description": "Park 3 - Collision",
+    "input_args": [
+        "load_function('parking.ParkingProblem').from_file('parks/park3.txt')",
+        "[(0,'R'),(0,'R'),(1,'L')]"
+    ],
+    "comparison_args": [
+        "3",
+        "False",
+        "{(0,'L'),(1,'R')}",
+        "'parks/park3.txt'"
+    ]
+}

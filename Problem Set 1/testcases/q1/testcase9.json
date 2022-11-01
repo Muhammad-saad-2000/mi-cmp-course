@@ -1,0 +1,13 @@
+{
+    "description": "Park 5 - Initial State",
+    "input_args": [
+        "load_function('parking.ParkingProblem').from_file('parks/park5.txt')",
+        "[]"
+    ],
+    "comparison_args": [
+        "0",
+        "False",
+        "{(0,'L'),(1,'R'),(2,'L'),(2,'R')}",
+        "'parks/park5.txt'"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "description": "Graph 2",
+    "input_args": [
+        "'search.UniformCostSearch'",
+        "GraphRoutingProblem.from_file('graphs/graph2.json')"
+    ],
+    "comparison_args": [
+        "[(['b', 'd', 'f', 'g'], ['a', 'b', 'c', 'd', 'f', 'g'])]",
+        "'graphs/graph2_fig.txt'"
+    ]
+}

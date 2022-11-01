@@ -1,0 +1,14 @@
+{
+    "description": "Dungeon 4",
+    "input_args": [
+        "'search.AStarSearch'",
+        "DungeonProblem.from_file('dungeons/dungeon4.txt')"
+    ],
+    "comparison_args": [
+        "43",
+        "[5000]",
+        "'dungeons/dungeon4.txt'"
+    ],
+    "maximum_grade": 1,
+    "timeout": 60
+}

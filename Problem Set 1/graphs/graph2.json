@@ -1,0 +1,35 @@
+{
+    "graph":{
+        "a": {
+            "position": [0, 0],
+            "adjacent": ["b", "c"]
+        },
+        "b": {
+            "position": [1, 1],
+            "adjacent": ["a", "c", "d", "e"]
+        },
+        "c": {
+            "position": [1, -2],
+            "adjacent": ["a", "b", "d", "f"]
+        },
+        "d": {
+            "position": [2, 0],
+            "adjacent": ["b", "c", "e", "f"]
+        },
+        "e": {
+            "position": [3, 5],
+            "adjacent": ["b", "d", "f", "g"]
+        },
+        "f": {
+            "position": [3, -1],
+            "adjacent": ["c", "d", "e", "g"]
+        },
+        "g": {
+            "position": [4, 0],
+            "adjacent": ["e", "f"]
+        }
+    },
+    "start": "a",
+    "goal": "g",
+    "figure": "graph2_fig.txt"
+}

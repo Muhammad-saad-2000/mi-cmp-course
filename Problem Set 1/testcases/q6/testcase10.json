@@ -1,0 +1,14 @@
+{
+    "description": "Dungeon 2 (h=euclidean distance to exit)",
+    "function": "test_tools.run_informed_search_for_dungeon",
+    "comparator": "test_tools.compare_search_results_for_dungeon",
+    "input_args": [
+        "'search.BestFirstSearch'",
+        "DungeonProblem.from_file('dungeons/dungeon2.txt')",
+        "load_function('dungeon_heuristic.weak_heuristic')"
+    ],
+    "comparison_args": [
+        "[('RRURURRDDRRUUUUUU', 27), ('RURURURRDDDRRUUUUUU', 28)]",
+        "'dungeons/dungeon2.txt'"
+    ]
+}

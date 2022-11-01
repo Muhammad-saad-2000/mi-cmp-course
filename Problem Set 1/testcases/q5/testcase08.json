@@ -1,0 +1,14 @@
+{
+    "description": "Dungeon 2 (h=0)",
+    "function": "test_tools.run_informed_search_for_dungeon",
+    "comparator": "test_tools.compare_search_results_for_dungeon",
+    "input_args": [
+        "'search.AStarSearch'",
+        "DungeonProblem.from_file('dungeons/dungeon2.txt')",
+        "lambda *_: 0"
+    ],
+    "comparison_args": [
+        "[('RRRRRRRUUUUUU', 46), ('UUUUUURRRRRRR', 46)]",
+        "'dungeons/dungeon2.txt'"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "description": "Graph 4",
+    "input_args": [
+        "'search.BreadthFirstSearch'",
+        "GraphRoutingProblem.from_file('graphs/graph4.json')"
+    ],
+    "comparison_args": [
+        "[(None, ['a', 'b', 'c']), (None, ['a', 'c', 'b'])]",
+        "'graphs/graph4_fig.txt'"
+    ]
+}

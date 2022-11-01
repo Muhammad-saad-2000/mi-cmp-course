@@ -1,0 +1,23 @@
+{
+    "graph":{
+        "a": {
+            "position": [0, 0],
+            "adjacent": ["b", "c", "d"]
+        },
+        "b": {
+            "position": [0, 1],
+            "adjacent": ["d"]
+        },
+        "c": {
+            "position": [1, 0],
+            "adjacent": []
+        },
+        "d": {
+            "position": [0, -1],
+            "adjacent": ["c"]
+        }
+    },
+    "start": "a",
+    "goal": "c",
+    "figure": "graph3_fig.txt"
+}

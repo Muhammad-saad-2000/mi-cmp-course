@@ -1,0 +1,31 @@
+{
+    "graph":{
+        "a": {
+            "position": [0, 0],
+            "adjacent": ["b", "c"]
+        },
+        "b": {
+            "position": [1, 1],
+            "adjacent": ["d"]
+        },
+        "c": {
+            "position": [-1, 0],
+            "adjacent": ["f"]
+        },
+        "d": {
+            "position": [2, 1],
+            "adjacent": ["e"]
+        },
+        "e": {
+            "position": [2, 0],
+            "adjacent": ["f"]
+        },
+        "f": {
+            "position": [1, 0],
+            "adjacent": []
+        }
+    },
+    "start": "a",
+    "goal": "f",
+    "figure": "graph6_fig.txt"
+}

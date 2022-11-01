@@ -1,0 +1,9 @@
+B
+^
+|
+A->C->G
+|
+v
+D
+Start: A
+Goal: G

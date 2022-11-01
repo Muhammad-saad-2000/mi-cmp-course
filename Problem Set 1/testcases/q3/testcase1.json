@@ -1,0 +1,11 @@
+{
+    "description": "Graph 1",
+    "input_args": [
+        "'search.DepthFirstSearch'",
+        "GraphRoutingProblem.from_file('graphs/graph1.json')"
+    ],
+    "comparison_args": [
+        "[(['c', 'g'], ['a', 'b', 'c', 'g']), (['c', 'g'], ['a', 'd', 'c', 'g'])]",
+        "'graphs/graph1_fig.txt'"
+    ]
+}

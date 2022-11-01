@@ -1,0 +1,13 @@
+{
+    "description": "Park 4 - Angry Goal State",
+    "input_args": [
+        "load_function('parking.ParkingProblem').from_file('parks/park4.txt')",
+        "[(1,'R'),(1,'U'),(0,'R'),(0,'R')]"
+    ],
+    "comparison_args": [
+        "104",
+        "True",
+        "None",
+        "'parks/park4.txt'"
+    ]
+}

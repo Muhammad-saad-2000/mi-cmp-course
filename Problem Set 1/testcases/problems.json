@@ -1,0 +1,55 @@
+{
+    "name": "Problem Set 1: Search",
+    "problems": [
+        {
+            "name": "Problem Formulation",
+            "testcases_path": "q1",
+            "function": "test_tools.run_parking_trajectory",
+            "comparator": "test_tools.check_parking_problem",
+            "timeout": 2
+        },
+        {
+            "name": "Breadth First Search",
+            "testcases_path": "q2",
+            "function": "test_tools.run_uninformed_search_for_graph_routing",
+            "comparator": "test_tools.compare_search_results_for_graph_routing",
+            "timeout": 2
+        },
+        {
+            "name": "Depth First Search",
+            "testcases_path": "q3",
+            "function": "test_tools.run_uninformed_search_for_graph_routing",
+            "comparator": "test_tools.compare_search_results_for_graph_routing",
+            "timeout": 2
+        },
+        {
+            "name": "Uniform Cost Search",
+            "testcases_path": "q4",
+            "function": "test_tools.run_uninformed_search_for_graph_routing",
+            "comparator": "test_tools.compare_search_results_for_graph_routing",
+            "timeout": 2
+        },
+        {
+            "name": "A* Search",
+            "testcases_path": "q5",
+            "function": "test_tools.run_informed_search_for_graph_routing",
+            "comparator": "test_tools.compare_search_results_for_graph_routing",
+            "timeout": 2
+        },
+        {
+            "name": "Best First Search",
+            "testcases_path": "q6",
+            "function": "test_tools.run_informed_search_for_graph_routing",
+            "comparator": "test_tools.compare_search_results_for_graph_routing",
+            "timeout": 2
+        },
+        {
+            "name": "Heuristic",
+            "testcases_path": "q7",
+            "function": "test_tools.test_dungeon_heuristic",
+            "comparator": "test_tools.compare_heuristic_for_dungeon",
+            "timeout": 2,
+            "weight": 2
+        }
+    ]
+}

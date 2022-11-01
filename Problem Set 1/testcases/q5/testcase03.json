@@ -1,0 +1,11 @@
+{
+    "description": "Graph 3",
+    "input_args": [
+        "'search.AStarSearch'",
+        "GraphRoutingProblem.from_file('graphs/graph3.json')"
+    ],
+    "comparison_args": [
+        "[(['c'], ['a', 'c'])]",
+        "'graphs/graph3_fig.txt'"
+    ]
+}
