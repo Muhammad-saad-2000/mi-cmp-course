@@ -1,0 +1,13 @@
+{
+    "description": "Almost Solved",
+    "function": "test_tools.run_csp_solve",
+    "comparator": "test_tools.compare_csp_solve",
+    "input_args": [
+        "'CSP_solver.solve'",
+        "SudokuProblem.from_file('sudoku/sudoku_4x4_2.txt')"
+    ],
+    "comparison_args": [
+        "SudokuProblem.from_file('sudoku/sudoku_4x4_2.txt')",
+        "[(9, {'(0, 1)': 2, '(0, 3)': 4, '(1, 0)': 3, '(1, 2)': 1, '(2, 1)': 1, '(2, 3)': 3, '(3, 0)': 4, '(3, 2)': 2})]"
+    ]
+}

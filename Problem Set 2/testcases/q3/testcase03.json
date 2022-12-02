@@ -1,0 +1,14 @@
+{
+    "description": "A 9x9 Test",
+    "function": "test_tools.run_least_restraining_values",
+    "comparator": "test_tools.compare_least_restraining_values",
+    "input_args": [
+        "'CSP_solver.least_restraining_values'",
+        "SudokuProblem.from_file('sudoku/sudoku_9x9_3.txt')",
+        "'(0, 1)'"
+    ],
+    "comparison_args": [
+        "SudokuProblem.from_file('sudoku/sudoku_9x9_3.txt')",
+        "[2, 1, 8, 6]"
+    ]
+}

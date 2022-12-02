@@ -1,0 +1,13 @@
+{
+    "description": "Unsolvable",
+    "function": "test_tools.run_csp_solve",
+    "comparator": "test_tools.compare_csp_solve",
+    "input_args": [
+        "'CSP_solver.solve'",
+        "SudokuProblem.from_file('sudoku/sudoku_4x4_4.txt')"
+    ],
+    "comparison_args": [
+        "SudokuProblem.from_file('sudoku/sudoku_4x4_4.txt')",
+        "[(1, None)]"
+    ]
+}

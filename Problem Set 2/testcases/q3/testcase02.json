@@ -1,0 +1,14 @@
+{
+    "description": "Another Test",
+    "function": "test_tools.run_least_restraining_values",
+    "comparator": "test_tools.compare_least_restraining_values",
+    "input_args": [
+        "'CSP_solver.least_restraining_values'",
+        "SudokuProblem.from_file('sudoku/sudoku_4x4_3.txt')",
+        "'(2, 2)'"
+    ],
+    "comparison_args": [
+        "SudokuProblem.from_file('sudoku/sudoku_4x4_3.txt')",
+        "[4, 1, 2]"
+    ]
+}

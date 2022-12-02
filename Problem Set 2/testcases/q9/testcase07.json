@@ -1,0 +1,14 @@
+{
+    "description": "Dungeon 1",
+    "function": "test_tools.run_search_for_dungeon",
+    "comparator": "test_tools.compare_search_results_for_dungeon",
+    "input_args": [
+        "'search.expectimax'",
+        "DungeonGame.from_file('dungeons/dungeon1.txt')",
+        "5"
+    ],
+    "comparison_args": [
+        "[(86.9, Direction.RIGHT, 745)]",
+        "'dungeons/dungeon1.txt'"
+    ]
+}

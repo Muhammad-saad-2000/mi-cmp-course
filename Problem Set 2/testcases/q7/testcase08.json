@@ -1,0 +1,14 @@
+{
+    "description": "Dungeon 2",
+    "function": "test_tools.run_search_for_dungeon",
+    "comparator": "test_tools.compare_search_results_for_dungeon",
+    "input_args": [
+        "'search.alphabeta'",
+        "DungeonGame.from_file('dungeons/dungeon2.txt')",
+        "5"
+    ],
+    "comparison_args": [
+        "[(-8.1, Direction.UP, 278)]",
+        "'dungeons/dungeon2.txt'"
+    ]
+}

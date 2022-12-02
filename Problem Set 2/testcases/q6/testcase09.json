@@ -1,0 +1,14 @@
+{
+    "description": "Dungeon 3",
+    "function": "test_tools.run_search_for_dungeon",
+    "comparator": "test_tools.compare_search_results_for_dungeon",
+    "input_args": [
+        "'search.minimax'",
+        "DungeonGame.from_file('dungeons/dungeon3.txt')",
+        "5"
+    ],
+    "comparison_args": [
+        "[(-12.1, Direction.LEFT, 352)]",
+        "'dungeons/dungeon3.txt'"
+    ]
+}

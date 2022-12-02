@@ -1,0 +1,13 @@
+{
+    "description": "Single Possibility",
+    "function": "test_tools.run_one_consistency",
+    "comparator": "test_tools.compare_one_consistency",
+    "input_args": [
+        "'CSP_solver.one_consistency'",
+        "SudokuProblem.from_file('sudoku/sudoku_4x4_2.txt')"
+    ],
+    "comparison_args": [
+        "True",
+        "{'(0, 1)': {2}, '(0, 3)': {4}, '(1, 0)': {3}, '(1, 2)': {1}, '(2, 1)': {1}, '(2, 3)': {3}, '(3, 0)': {4}, '(3, 2)': {2}, }"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "description": "Tree 2",
+    "function": "test_tools.run_search_for_tree",
+    "comparator": "test_tools.compare_search_results_for_tree",
+    "input_args": [
+        "'search.alphabeta'",
+        "TreeGame.from_file('trees/tree2.json')"
+    ],
+    "comparison_args": [
+        "[(4, 'A', ['root', 'root/A', 'root/A/A', 'root/A/B', 'root/A/B/A', 'root/A/B/A/A', 'root/A/B/A/B', 'root/A/C', 'root/B', 'root/B/A', 'root/B/A/A', 'root/B/A/A/A'])]",
+        "'trees/tree2.json'"
+    ]
+}

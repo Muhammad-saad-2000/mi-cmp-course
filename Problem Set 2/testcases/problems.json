@@ -1,0 +1,50 @@
+{
+    "name": "Problem Set 1: Search",
+    "problems": [
+        {
+            "name": "One Consistency",
+            "testcases_path": "q1",
+            "timeout": 1
+        },
+        {
+            "name": "Forward Checking",
+            "testcases_path": "q2",
+            "timeout": 1
+        },
+        {
+            "name": "Least Restricting Value",
+            "testcases_path": "q3",
+            "timeout": 1
+        },
+        {
+            "name": "Minimum Remaining Value",
+            "testcases_path": "q4",
+            "timeout": 1
+        },
+        {
+            "name": "Backtracking Search",
+            "testcases_path": "q5",
+            "timeout": 1
+        },
+        {
+            "name": "Minimax",
+            "testcases_path": "q6",
+            "timeout": 1
+        },
+        {
+            "name": "Alpha Beta Pruning",
+            "testcases_path": "q7",
+            "timeout": 1
+        },
+        {
+            "name": "Alpha Beta Pruning with Move Ordering",
+            "testcases_path": "q8",
+            "timeout": 1
+        },
+        {
+            "name": "Expectimax",
+            "testcases_path": "q9",
+            "timeout": 1
+        }
+    ]
+}

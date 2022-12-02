@@ -1,0 +1,13 @@
+{
+    "description": "A 9x9 Test",
+    "function": "test_tools.run_minimum_remaining_values",
+    "comparator": "test_tools.compare_minimum_remaining_values",
+    "input_args": [
+        "'CSP_solver.minimum_remaining_values'",
+        "SudokuProblem.from_file('sudoku/sudoku_9x9_3.txt')"
+    ],
+    "comparison_args": [
+        "SudokuProblem.from_file('sudoku/sudoku_9x9_3.txt')",
+        "'(1, 2)'"
+    ]
+}

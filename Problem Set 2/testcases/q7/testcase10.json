@@ -1,0 +1,14 @@
+{
+    "description": "Dungeon 4",
+    "function": "test_tools.run_search_for_dungeon",
+    "comparator": "test_tools.compare_search_results_for_dungeon",
+    "input_args": [
+        "'search.alphabeta'",
+        "DungeonGame.from_file('dungeons/dungeon4.txt')",
+        "5"
+    ],
+    "comparison_args": [
+        "[(195.5, Direction.UP, 784)]",
+        "'dungeons/dungeon4.txt'"
+    ]
+}

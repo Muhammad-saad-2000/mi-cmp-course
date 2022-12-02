@@ -1,0 +1,13 @@
+{
+    "description": "Tree 1",
+    "function": "test_tools.run_search_for_tree",
+    "comparator": "test_tools.compare_search_results_for_tree",
+    "input_args": [
+        "'search.minimax'",
+        "TreeGame.from_file('trees/tree1.json')"
+    ],
+    "comparison_args": [
+        "[(9, 'B', ['root', 'root/A', 'root/A/A', 'root/A/A/A', 'root/A/A/A/A', 'root/A/A/A/B', 'root/A/A/B', 'root/A/A/B/A', 'root/A/A/B/B', 'root/A/B', 'root/A/B/A', 'root/A/B/A/A', 'root/A/B/A/B', 'root/A/B/B', 'root/A/B/B/A', 'root/A/B/B/B', 'root/B', 'root/B/A', 'root/B/A/A', 'root/B/A/A/A', 'root/B/A/A/B', 'root/B/A/B', 'root/B/A/B/A', 'root/B/A/B/B', 'root/B/B', 'root/B/B/A', 'root/B/B/A/A', 'root/B/B/A/B', 'root/B/B/B', 'root/B/B/B/A', 'root/B/B/B/B'])]",
+        "'trees/tree1.json'"
+    ]
+}
