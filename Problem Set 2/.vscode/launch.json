@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "play_sudoku.py",
-            "args": ["./sudoku/sudoku_9x9_2.txt", "-a=backtrack"],
+            "args": ["./sudoku/sudoku_4x4_1.txt", "-a=backtrack"],
             "console": "integratedTerminal"
         },
         {

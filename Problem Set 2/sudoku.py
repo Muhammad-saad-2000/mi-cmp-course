@@ -75,7 +75,7 @@ class SudokuProblem(Problem):
         problem.size = size
         problem.clues = fixed_values
         problem.variables = variables
-        problem.domains = {variable:domain for variable in variables}
+        problem.domains = {variable:domain.copy() for variable in variables}
         problem.constraints = constraints
         
         return problem
