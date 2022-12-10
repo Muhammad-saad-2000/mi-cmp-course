@@ -30,24 +30,138 @@ def greedy(game: Game[S, A], state: S, heuristic: HeuristicFunction, max_depth: 
 # for all the agents. So to get the value for the player (which acts at the max nodes), you need to
 # get values[0].
 def minimax(game: Game[S, A], state: S, heuristic: HeuristicFunction, max_depth: int = -1) -> Tuple[float, A]:
-    #TODO: Write this function
-    NotImplemented()
+    agent = game.get_turn(state)
+    terminal, values = game.is_terminal(state)
+
+    if terminal: return values[0], None
+    if max_depth == 0: return heuristic(game, state, 0), None
+
+    if agent == 0:
+        optimal_value = -math.inf
+        optimal_action = None
+        for action in game.get_actions(state):
+            value, _ = minimax(game, game.get_successor(state, action), heuristic, max_depth - 1)
+            if value > optimal_value:
+                optimal_value = value
+                optimal_action = action
+        return optimal_value, optimal_action
+
+    if agent != 0:
+        optimal_value = math.inf
+        optimal_action = None
+        for action in game.get_actions(state):
+            value, _ = minimax(game, game.get_successor(state, action), heuristic, max_depth - 1)
+            if value < optimal_value:
+                optimal_value = value
+                optimal_action = action
+        return optimal_value, optimal_action
 
 # Apply Alpha Beta pruning and return the tree value and the best action
 # Hint: Read the hint for minimax.
 def alphabeta(game: Game[S, A], state: S, heuristic: HeuristicFunction, max_depth: int = -1) -> Tuple[float, A]:
-    #TODO: Write this function
-    NotImplemented()
+    def alphabeta_backtrack(game: Game[S, A], state: S, heuristic: HeuristicFunction, max_depth: int, alpha: float, beta: float) -> Tuple[float, A]:
+        agent = game.get_turn(state)
+        terminal, values = game.is_terminal(state)
+
+        if terminal: return values[0], None
+        if max_depth == 0: return heuristic(game, state, 0), None
+
+        if agent == 0:
+            optimal_value = -math.inf
+            optimal_action = None
+            for action in game.get_actions(state):
+                value, _ = alphabeta_backtrack(game, game.get_successor(state, action), heuristic, max_depth - 1, alpha, beta)
+                if value > optimal_value:
+                    optimal_value = value
+                    optimal_action = action
+                alpha = max(alpha, optimal_value)
+                if optimal_value >= beta:
+                    return optimal_value, optimal_action
+            return optimal_value, optimal_action
+
+        if agent != 0:
+            optimal_value = math.inf
+            optimal_action = None
+            for action in game.get_actions(state):
+                value, _ = alphabeta_backtrack(game, game.get_successor(state, action), heuristic, max_depth - 1, alpha, beta)
+                if value < optimal_value:
+                    optimal_value = value
+                    optimal_action = action
+                if optimal_value <= alpha:
+                    return optimal_value, optimal_action
+                beta = min(beta, optimal_value)
+            return optimal_value, optimal_action
+    
+    return alphabeta_backtrack(game, state, heuristic, max_depth, -math.inf, math.inf)
 
 # Apply Alpha Beta pruning with move ordering and return the tree value and the best action
 # Hint: Read the hint for minimax.
 def alphabeta_with_move_ordering(game: Game[S, A], state: S, heuristic: HeuristicFunction, max_depth: int = -1) -> Tuple[float, A]:
-    #TODO: Write this function
-    NotImplemented()
+    def alphabeta_with_move_ordering_backtrack(game: Game[S, A], state: S, heuristic: HeuristicFunction, max_depth: int, alpha: float, beta: float) -> Tuple[float, A]:
+        agent = game.get_turn(state)
+        terminal, values = game.is_terminal(state)
+
+        if terminal: return values[0], None
+        if max_depth == 0: return heuristic(game, state, 0), None
+
+        actions_states = [(action, game.get_successor(state, action)) for action in game.get_actions(state)]
+        actions_states.sort(key=lambda x: heuristic(game, x[1], agent), reverse=True)
+
+        if agent == 0:
+            optimal_value = -math.inf
+            optimal_action = None
+            for action, state in actions_states:
+                value, _ = alphabeta_with_move_ordering_backtrack(game, state, heuristic, max_depth - 1, alpha, beta)
+                if value > optimal_value:
+                    optimal_value = value
+                    optimal_action = action 
+                alpha = max(alpha, optimal_value)
+                if optimal_value >= beta:
+                    return optimal_value, optimal_action
+            return optimal_value, optimal_action
+
+        if agent != 0:
+            optimal_value = math.inf
+            optimal_action = None
+            for action, state in actions_states:
+                value, _ = alphabeta_with_move_ordering_backtrack(game, state, heuristic, max_depth - 1, alpha, beta)
+                if value < optimal_value:
+                    optimal_value = value
+                    optimal_action = action
+                if optimal_value <= alpha:
+                    return optimal_value, optimal_action
+                beta = min(beta, optimal_value)
+            return optimal_value, optimal_action
+    
+    return alphabeta_with_move_ordering_backtrack(game, state, heuristic, max_depth, -math.inf, math.inf)
+
 
 # Apply Expectimax search and return the tree value and the best action
 # Hint: Read the hint for minimax, but note that the monsters (turn > 0) do not act as min nodes anymore,
 # they now act as chance nodes (they act randomly).
 def expectimax(game: Game[S, A], state: S, heuristic: HeuristicFunction, max_depth: int = -1) -> Tuple[float, A]:
-    #TODO: Write this function
-    NotImplemented()
+    agent = game.get_turn(state)
+    terminal, values = game.is_terminal(state)
+
+    if terminal: return values[0], None
+    if max_depth == 0: return heuristic(game, state, 0), None
+
+    if agent == 0:
+        optimal_value = -math.inf
+        optimal_action = None
+        for action in game.get_actions(state):
+            value, _ = expectimax(game, game.get_successor(state, action), heuristic, max_depth - 1)
+            if value > optimal_value:
+                optimal_value = value
+                optimal_action = action
+        return optimal_value, optimal_action
+
+    if agent != 0:
+        optimal_value = 0
+        optimal_action = None
+        for action in game.get_actions(state):
+            value, _ = expectimax(game, game.get_successor(state, action), heuristic, max_depth - 1)
+            optimal_value += value
+        optimal_value /= len(game.get_actions(state))
+        return optimal_value, optimal_action
+
