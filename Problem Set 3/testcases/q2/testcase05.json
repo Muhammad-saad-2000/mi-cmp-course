@@ -1,0 +1,11 @@
+{
+    "description": "Grid 6 (Question 5)",
+    "input_kwargs": {
+        "env": "GridEnv.from_file('grids/grid6.json')",
+        "options_fn": "load_function('options.question2_5')"
+    },
+    "comparison_args": [
+        "{(0, 1): 'UDLR', (4, 0): 'UDLR', (2, 1): 'U', (4, 3): 'L', (3, 1): 'UDLR', (4, 1): 'U', (0, 0): 'UDLR', (0, 3): 'U', (2, 0): 'UDLR', (3, 0): 'UDLR', (2, 3): 'LR', (0, 2): 'UDLR', (3, 3): 'U', (1, 0): 'UDLR', (1, 3): 'U'}",
+        "'grids/grid6.json'"
+    ]
+}

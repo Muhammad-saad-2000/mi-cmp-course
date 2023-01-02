@@ -1,0 +1,47 @@
+{
+    "name": "Problem Set 1: Search",
+    "problems": [
+        {
+            "name": "Value Iteration",
+            "testcases_path": "q1",
+            "function": "test_tools.run_value_iteration",
+            "comparator": "test_tools.compare_utility_policy_results",
+            "timeout": 2
+        },
+        {
+            "name": "Parameter Selection",
+            "testcases_path": "q2",
+            "function": "test_tools.run_value_iteration_with_options",
+            "comparator": "test_tools.compare_policy_only_results",
+            "timeout": 2
+        },
+        {
+            "name": "Policy Iteration",
+            "testcases_path": "q3",
+            "function": "test_tools.run_policy_iteration",
+            "comparator": "test_tools.compare_utility_policy_results",
+            "timeout": 2
+        },
+        {
+            "name": "SARSA",
+            "testcases_path": "q4",
+            "function": "test_tools.run_rl_agent",
+            "comparator": "test_tools.compare_q_policy_results",
+            "timeout": 2
+        },
+        {
+            "name": "Q-Learning",
+            "testcases_path": "q5",
+            "function": "test_tools.run_rl_agent",
+            "comparator": "test_tools.compare_q_policy_results",
+            "timeout": 2
+        },
+        {
+            "name": "Approximate Q-Learning",
+            "testcases_path": "q6",
+            "function": "test_tools.run_approx_rl_agent",
+            "comparator": "test_tools.compare_weights_policy_results",
+            "timeout": 2
+        }
+    ]
+}

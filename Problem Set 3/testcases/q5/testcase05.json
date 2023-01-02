@@ -1,0 +1,16 @@
+{
+    "description": "Grid 5 (Discount = 1.0, Iterations = 2)",
+    "input_kwargs": {
+        "agent": "load_function('reinforcement_learning.QLearningAgent')(ACTIONS, 1.0, 0, 0.1, 1234)",
+        "training_loop": "q_agent_training_loop",
+        "env": "GridEnv.from_file('grids/grid5.json', Point(0,2))",
+        "iterations": "2",
+        "step_limit": "-1",
+        "seed": "1234"
+    },
+    "comparison_args": [
+        "{'L': {(0, 1): 0, (1, 2): 0, (2, 1): 0, (0, 0): 0, (1, 1): 0, (0, 2): 0, (2, 2): 0, (1, 0): 0}, 'R': {(0, 1): 0, (1, 2): 0, (2, 1): 0, (0, 0): 0, (1, 1): 0, (0, 2): 0, (2, 2): 0, (1, 0): 0}, 'D': {(0, 1): 0, (1, 2): 0, (2, 1): 0, (0, 0): 0, (1, 1): 0, (0, 2): 0, (2, 2): 0, (1, 0): 0}, 'U': {(0, 1): -0.3, (1, 2): 0, (2, 1): 0, (0, 0): 0, (1, 1): 0, (0, 2): -0.1, (2, 2): 0, (1, 0): 0}}",
+        "{(0, 1): 'LRD', (1, 2): 'LRDU', (2, 1): 'LRDU', (0, 0): 'LRDU', (1, 1): 'LRDU', (0, 2): 'LRD', (2, 2): 'LRDU', (1, 0): 'LRDU'}",
+        "'grids/grid5.json'"
+    ]
+}

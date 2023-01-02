@@ -1,0 +1,16 @@
+{
+    "description": "Grid 1 (Discount = 1.0, Iterations = 2000, Step-Limit = 20, Exploration = 25%)",
+    "input_kwargs": {
+        "agent": "load_function('reinforcement_learning.ApproximateQLearningAgent')(GridFeatureExtractor(), ACTIONS, 1.0, 0.25, 0.1, 1234)",
+        "training_loop": "q_agent_training_loop",
+        "env": "GridEnv.from_file('grids/grid1.json', Point(0,2))",
+        "iterations": "2000",
+        "step_limit": "20",
+        "seed": "1234"
+    },
+    "comparison_args": [
+        "{'L': {'X': 0.10393226990946054, 'Y': 0.09388524953467721, '1': 0.7227590306938055}, 'R': {'X': -0.12027948224047762, 'Y': 0.13280759963458327, '1': 0.7761758037819128}, 'D': {'X': 0.04543461200119898, 'Y': 0.14693526220882666, '1': 0.7526159892007871}, 'U': {'X': -0.3053299959147495, 'Y': -0.2091912222346873, '1': 0.4277356151025341}}",
+        "{(0, 1): 'R', (1, 2): 'D', (2, 1): 'D', (0, 0): 'R', (2, 0): 'D', (0, 2): 'R', (2, 2): 'D', (1, 0): 'D', (3, 2): 'D'}",
+        "'grids/grid1.json'"
+    ]
+}

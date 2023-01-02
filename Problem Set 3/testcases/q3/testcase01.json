@@ -1,0 +1,14 @@
+{
+    "description": "Grid 1 (Discount = 0.5, Iterations = 1, No Noise)",
+    "input_kwargs": {
+        "env": "GridEnv.from_file('grids/grid1.json')",
+        "discount_factor": "0.5",
+        "iterations": "1",
+        "noise": "0.0"
+    },
+    "comparison_args": [
+        "{(0, 1): 0.0, (1, 2): 0.0, (2, 1): 0.0, (0, 0): 0.0, (2, 0): 0.0, (0, 2): 0.0, (2, 2): 0.0, (1, 0): 0.0, (3, 2): -1.0}",
+        "{(0, 0): 'UDLR', (0, 1): 'UDLR', (0, 2): 'UDLR', (1, 0): 'UDLR', (1, 2): 'UDLR', (2, 0): 'R', (2, 1): 'UDL', (2, 2): 'UDL', (3, 2): 'L'}",
+        "'grids/grid1.json'"
+    ]
+}

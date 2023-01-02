@@ -1,0 +1,11 @@
+{
+    "description": "Grid 6 (Question 6)",
+    "input_kwargs": {
+        "env": "GridEnv.from_file('grids/grid6.json')",
+        "options_fn": "load_function('options.question2_6')"
+    },
+    "comparison_args": [
+        "{(0, 1): 'D', (4, 0): 'D', (2, 1): 'D', (4, 3): 'U', (3, 1): 'LR', (4, 1): 'D', (0, 0): 'R', (0, 3): 'D', (2, 0): 'D', (3, 0): 'DR', (2, 3): 'U', (0, 2): 'D', (3, 3): 'D', (1, 0): 'R', (1, 3): 'D'}",
+        "'grids/grid6.json'"
+    ]
+}
